@@ -31,7 +31,6 @@ async function serviceWeather(event) {
     try {
         const capitals = await getCapitals(countries);
         const weather = await getWeather(capitals);
-        console.log(weather);
         markupWeather(weather);
     } catch(error) {
         console.log(error);
